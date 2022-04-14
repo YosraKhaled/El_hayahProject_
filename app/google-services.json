@@ -1,62 +1,33 @@
 {
   "project_info": {
-    "project_number": "707318679310",
-    "project_id": "elhayahproject",
-    "storage_bucket": "elhayahproject.appspot.com"
+    "project_number": "1084056750640",
+    "project_id": "elhayahproject-33a25",
+    "storage_bucket": "elhayahproject-33a25.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:707318679310:android:4837580875ccb0f0b1b95f",
-        "android_client_info": {
-          "package_name": "com.motatwra.newapp"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "707318679310-903pei56cotr4n5agl9qq858higahsif.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDqTLGJWPwsw8sM9sGtGvquePrUqOmsPB0"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "707318679310-903pei56cotr4n5agl9qq858higahsif.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:707318679310:android:284b828c5eeeef31b1b95f",
+        "mobilesdk_app_id": "1:1084056750640:android:4cb06fd835639191db7bf5",
         "android_client_info": {
           "package_name": "com.yosra.el_hayahproject"
         }
       },
       "oauth_client": [
         {
-          "client_id": "707318679310-903pei56cotr4n5agl9qq858higahsif.apps.googleusercontent.com",
+          "client_id": "1084056750640-8u33p4o09ipshanma2h8fdi3jh0l4ig7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDqTLGJWPwsw8sM9sGtGvquePrUqOmsPB0"
+          "current_key": "AIzaSyAdNghik0q66hZZehSeyReuts1ttVKg-gA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "707318679310-903pei56cotr4n5agl9qq858higahsif.apps.googleusercontent.com",
+              "client_id": "1084056750640-8u33p4o09ipshanma2h8fdi3jh0l4ig7.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

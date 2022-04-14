@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderDoctorActivity">
+
+
+    <ImageView
+        android:id="@+id/dr_img"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/avatar2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dr_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="NAME"
+        android:textSize="@dimen/_25sdp"
+        app:layout_constraintLeft_toRightOf="@id/dr_img"
+        app:layout_constraintTop_toTopOf="@id/dr_img" />
+
+    <TextView
+        android:id="@+id/dr_spc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:text="NAME"
+        android:textSize="@dimen/_18sdp"
+        app:layout_constraintEnd_toEndOf="@+id/dr_name"
+        app:layout_constraintLeft_toRightOf="@id/dr_img"
+        app:layout_constraintStart_toStartOf="@+id/dr_name"
+        app:layout_constraintTop_toBottomOf="@id/dr_name" />
+
+
+    <LinearLayout
+        android:id="@+id/day1l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dr_img" >
+
+        <TextView
+            android:id="@+id/day1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Sunday"
+            android:textSize="@dimen/_25sdp"
+            app:layout_constraintEnd_toEndOf="@+id/dr_name"
+            app:layout_constraintLeft_toRightOf="@id/dr_img"
+            app:layout_constraintStart_toStartOf="@+id/dr_name"
+            app:layout_constraintTop_toBottomOf="@id/dr_name" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dr_img" >
+
+            <TextView
+                android:id="@+id/fromtime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="From :10:00 pm"
+                android:textSize="@dimen/_20sdp"
+                app:layout_constraintEnd_toEndOf="@+id/dr_name"
+                app:layout_constraintLeft_toRightOf="@id/dr_img"
+                app:layout_constraintStart_toStartOf="@+id/dr_name"
+                app:layout_constraintTop_toBottomOf="@id/dr_name" />
+            <TextView
+                android:id="@+id/totime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="To :10:00 pm"
+                android:textSize="@dimen/_20sdp"
+                app:layout_constraintEnd_toEndOf="@+id/dr_name"
+                app:layout_constraintLeft_toRightOf="@id/dr_img"
+                app:layout_constraintStart_toStartOf="@+id/dr_name"
+                app:layout_constraintTop_toBottomOf="@id/dr_name" />
+        </LinearLayout>
+    </LinearLayout>
+
+<!-- DAY TOW-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/day1l" >
+
+        <TextView
+            android:id="@+id/day2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Monday"
+            android:textSize="@dimen/_25sdp"
+            app:layout_constraintEnd_toEndOf="@+id/dr_name"
+            app:layout_constraintLeft_toRightOf="@id/dr_img"
+            app:layout_constraintStart_toStartOf="@+id/dr_name"
+            app:layout_constraintTop_toBottomOf="@id/dr_name" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dr_img" >
+
+            <TextView
+                android:id="@+id/fromtime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="From :10:00 pm"
+                android:textSize="@dimen/_20sdp"
+                app:layout_constraintEnd_toEndOf="@+id/dr_name"
+                app:layout_constraintLeft_toRightOf="@id/dr_img"
+                app:layout_constraintStart_toStartOf="@+id/dr_name"
+                app:layout_constraintTop_toBottomOf="@id/dr_name" />
+            <TextView
+                android:id="@+id/totime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="To :10:00 pm"
+                android:textSize="@dimen/_20sdp"
+                app:layout_constraintEnd_toEndOf="@+id/dr_name"
+                app:layout_constraintLeft_toRightOf="@id/dr_img"
+                app:layout_constraintStart_toStartOf="@+id/dr_name"
+                app:layout_constraintTop_toBottomOf="@id/dr_name" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
