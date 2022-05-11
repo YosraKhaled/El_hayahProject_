@@ -1,4 +1,4 @@
-package com.yosra.el_hayahproject;
+package com.yosra.el_hayahproject.ui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,6 +16,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
+import com.yosra.el_hayahproject.R;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -22,7 +24,7 @@ public class OrderDoctorActivity extends AppCompatActivity {
     FirebaseFirestore mFirestore;
     String idDr;
     TextView firstDay, lastDay, specialty, name, timeOneF, timeOneT, timeTowF, timeTowT;
-    Button mBtn_SelectRoom;
+    Button mBtn_OrderDoctor;
 
 
     @Override
@@ -36,8 +38,10 @@ public class OrderDoctorActivity extends AppCompatActivity {
 
         iniView();
         getDataFromFireBase();
+        orderDoctor();
 
     }
+
 
     private void iniView() {
         mFirestore=FirebaseFirestore.getInstance();
@@ -50,7 +54,7 @@ public class OrderDoctorActivity extends AppCompatActivity {
         timeOneF = findViewById(R.id.totime1);
         timeTowF = findViewById(R.id.fromtime2);
         timeTowT = findViewById(R.id.totime2);
-
+        mBtn_OrderDoctor=findViewById(R.id.OrderDoctor);
 
     }
 
@@ -84,4 +88,12 @@ public class OrderDoctorActivity extends AppCompatActivity {
     }
 
 
+    private void orderDoctor() {
+        mBtn_OrderDoctor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(OrderDoctorActivity.this , SentUserDataActivity.class));
+            }
+        });
+    }
 }

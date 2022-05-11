@@ -11,18 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.El_hayahProject">
-        <activity android:name=".OrderDoctorActivity"></activity>
+        <activity android:name=".ui.SentUserDataActivity"></activity>
+        <activity android:name=".ui.OrderDoctorActivity" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".ui.HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActcivity"
+            android:name=".ui.LoginActcivity"
             android:exported="false" />
         <activity
-            android:name=".RegistrActivity"
+            android:name=".ui.RegistrActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".ui.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

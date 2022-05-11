@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OrderDoctorActivity">
+    tools:context=".ui.OrderDoctorActivity">
 
 
     <ImageView
@@ -98,13 +98,14 @@
 
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_20sdp"
         android:orientation="vertical"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/day1l" >
+        app:layout_constraintTop_toBottomOf="@id/day1l">
 
         <TextView
             android:id="@+id/day2"
@@ -117,13 +118,14 @@
             app:layout_constraintLeft_toRightOf="@id/dr_img"
             app:layout_constraintStart_toStartOf="@+id/dr_name"
             app:layout_constraintTop_toBottomOf="@id/dr_name" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/dr_img" >
+            app:layout_constraintTop_toBottomOf="@id/dr_img">
 
             <TextView
                 android:id="@+id/fromtime2"
@@ -136,6 +138,7 @@
                 app:layout_constraintLeft_toRightOf="@id/dr_img"
                 app:layout_constraintStart_toStartOf="@+id/dr_name"
                 app:layout_constraintTop_toBottomOf="@id/dr_name" />
+
             <TextView
                 android:id="@+id/totime2"
                 android:layout_width="wrap_content"
@@ -148,6 +151,19 @@
                 app:layout_constraintStart_toStartOf="@+id/dr_name"
                 app:layout_constraintTop_toBottomOf="@id/dr_name" />
         </LinearLayout>
+
+
     </LinearLayout>
 
+    <Button
+        android:id="@+id/OrderDoctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:text="Order Doctor"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>

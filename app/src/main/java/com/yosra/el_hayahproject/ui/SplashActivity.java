@@ -1,4 +1,4 @@
-package com.yosra.el_hayahproject;
+package com.yosra.el_hayahproject.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,7 @@ import android.os.Handler;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.yosra.el_hayahproject.R;
 
 public class SplashActivity extends AppCompatActivity {
     FirebaseAuth mAuth;
